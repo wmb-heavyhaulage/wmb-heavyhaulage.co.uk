@@ -1,0 +1,109 @@
+@import "color-definitions";
+
+nav {
+  color: $tertiary-color;
+  text-align: center;
+  background: $secondary-color;
+  font-family: sans-serif;
+  text-transform: uppercase;
+
+  a {
+    display: block;
+    margin: 0.5em;
+    border: 1px solid $tertiary-color;
+    padding: 0.5em;
+    text-decoration: inherit;
+    color: inherit;
+
+    // Properly handle overflowing content
+    // Break onto the next line instead of overflowing,
+    // and insert hyphens if supported.
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+
+    // disable Mobile Safari link highlight
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    &:hover {
+      color: $primary-color;
+      border-color: $primary-color;
+    }
+
+    &:active {
+      background: $primary-color;
+      color: $tertiary-color;
+      border-color: $tertiary-color;
+    }
+  }
+}
+
+// body::before is like an `position: absolute` nav element that is displayed
+// behind it. This gives the allsuion that the navigation is stretched to the
+// full container height, while still allowing nav to be a floating element.
+// (Only when navigation is displayed as a sidebar, i.e. in large viewports).
+body::before { @extend nav; }
+
+@media (min-width: 10em) {
+  // Arrange navigation into a 100%-width grid.
+  $space-between: 1%;
+  $grid-columns: 2;
+
+  nav {
+    -webkit-flex-flow: row wrap;
+    display: -webkit-flex;
+    padding: 0.25em;
+
+    a {
+      -webkit-flex: 0 0 100% / $grid-columns - $space-between * 2;
+      margin: $space-between;
+    }
+  }
+}
+
+@media (min-width: 35em) {
+  $navigation-width: 9.5rem;
+
+  // Appear on top of body:before
+  h1, nav {
+    position: relative;
+  }
+
+  nav {
+    float: left;
+    display: block; // reset flexbox styles.
+    padding: 0;
+    width: $navigation-width;
+
+    a {
+      margin: .5em;
+    }
+
+    // Keep nav on screen if it's scrolled past — dock to top of window.
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
+    // If it's in fixed-mode, it'll have to be able to scroll or the user won't
+    // be able to access lower things in the menu
+    max-height: 100vh;
+    overflow: auto;
+
+     + * {
+       margin-left: $navigation-width;
+     }
+  }
+
+  // `body::before` renders `nav` background.
+  // Explained above.
+  body::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-height: none; // override inherited max-height from `nav`.
+    box-sizing: border-box;
+  }
+}

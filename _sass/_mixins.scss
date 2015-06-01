@@ -1,0 +1,10 @@
+@function stripes($angle, $width, $colors...) {
+  $value: $angle;
+  $i: 0;
+  @each $color in $colors {
+    $value: "#{$value}, #{$color} #{$i}";
+    $i: $i + $width;
+    $value: "#{$value}, #{$color} #{$i}";
+  }
+  @return repeating-linear-gradient(#{$value});
+}

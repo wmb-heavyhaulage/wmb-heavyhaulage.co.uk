@@ -1,0 +1,8 @@
+gems:
+  - jekyll-gallery-generator
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"

@@ -1,0 +1,30 @@
+// This file contains color definitions used on the site.
+// Every color used on the site should be defined here, so that colours are
+// kept uniform across the site and have a semantic meaning attached to them.
+//
+// The following colours, as defined in CSS Level 3, are exceptions:
+// * black
+// * white
+// * transparent
+//
+// Other colours can be generated based on these without being named, e.g. by
+// using the mix() function, and do not have to be named if they are used
+// exactly once.
+
+$primary-color: mix(red, #ca0813);
+$secondary-color: #343797;
+$tertiary-color: #cccccd;
+
+// Define bar-gradient only as a mixin to prevent lazy unprefixed usage of
+// linear-gradient, which will not be supported by older browsers.
+@mixin bar-gradient($property) {
+  $from: #d6d6d6;
+  $to: #aeaeae;
+  #{$property}: mix($from, $to); // fallback
+  #{$property}: -webkit-gradient(linear, 0 0, 0 100%, from($from), to($to));
+  #{$property}: -webkit-linear-gradient($from, $to);
+  #{$property}:    -moz-linear-gradient($from, $to);
+  #{$property}:     -ms-linear-gradient($from, $to);
+  #{$property}:      -o-linear-gradient($from, $to);
+  #{$property}:         linear-gradient($from, $to);
+}

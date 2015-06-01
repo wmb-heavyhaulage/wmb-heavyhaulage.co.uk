@@ -1,0 +1,17 @@
+---
+layout: page
+---
+
+<h2>Gallery</h2>
+
+<ul class="gallery">
+{% for gallery in page.galleries %}
+  <li>
+    <a href="{{ gallery['gallery'] }}">
+      <img src="{{ gallery['gallery'] }}/thumbs/{{ gallery['best_image'] }}">
+      <h3 class="title">{{ gallery["name"] }}</h3>
+      {{ gallery["images"] | size }} image{% if gallery["images"].size != 1 %}s{% endif %}
+    </a>
+  </li>
+{% endfor %}
+</ul>

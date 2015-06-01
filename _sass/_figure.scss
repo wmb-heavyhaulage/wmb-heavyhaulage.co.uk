@@ -1,0 +1,46 @@
+// This file contains styling for `figure` elements that are used to display
+// content that is related to the the text content of a page.
+//
+// Since their styles are quite heavily dependent on each other, styles for
+// iframes (e.g. Google Maps) are also contained in this file.
+//
+// Iframe styles defined in this file only apply to iframes contained within
+// `figure` elements.
+
+figure {
+  // Bring the default figure margin in line with other block-level elements.
+  margin: 1em 0;
+
+  > * {
+    width: 100%; // allow parent figure to specify width.
+  }
+
+  > img {
+    height: auto;
+  }
+
+  > iframe {
+    min-height: 180px; // min-height overrides max-height.
+
+    // declare a fallback max-height for browers that don't support vh units.
+    // TODO: does this work in those browers?
+    max-height: 50%;
+    max-height: 50vh;
+  }
+}
+
+// When the user-agent is large enough, display the figure as a secondary
+// column, to the right of the main content.
+@media (min-width: 65em) {
+  figure {
+    box-sizing: content-box;
+    min-width: 40%;
+    max-width: 50%;
+    float: right;
+
+    // Display a border to seperate it from the main content,
+    // which may a have a header underline that would otherwise hit right up
+    // against the figure.
+    border-left: 2em solid white;
+  }
+}

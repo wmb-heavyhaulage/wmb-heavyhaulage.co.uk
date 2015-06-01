@@ -1,0 +1,62 @@
+// This file defines the main layout for all pages on the site.
+// It should be used to style an outer container area that is the same for all
+// pages.
+
+@import "mixins";
+
+$border-height: 50px;
+
+* { box-sizing: border-box; }
+
+html {
+  height: 100%;
+  padding: $border-height 0 $border-height;
+}
+
+body {
+  min-height: 100%;
+  margin: 0 5% $border-height;
+  position: relative; // child elements should be positioned relative to body.
+}
+
+// position something off the bottom of the page so that the browser
+// will render slightly below the end of the body,
+// allowing the backgroudn to show through like it does on the other sides.
+body:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: $border-height;
+
+  // this pseudo-element is also used as a clearfix, since bdoy contains
+  // navigation, which is sometimes (based on a media query) styled as a
+  // floating column.
+  clear: both;
+}
+
+h1, footer {
+  margin: 0;
+  padding: 1em;
+}
+
+main {
+  padding: 0 2em 48px;
+  font-size: 1.2em;
+}
+
+main:after {
+  // clearfix
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+}

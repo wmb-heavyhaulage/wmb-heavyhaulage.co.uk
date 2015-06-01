@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- OpenGraph -->
+  <meta property="og:image" content="TODO">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:type" content="blog">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}">
+  <meta name="twitter:description" content="{{ page.content | markdownify | strip_html | truncate: 200 }}">
+  <meta name="twitter:image" content="TODO">
+  <meta name="twitter:site" content="TODO">
+  <meta name="twitter:creator" content="TODO">
+  <meta name="twitter:domain" content="{{ site.url }}">
+
+  <!-- Windows -->
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="TODO">
+  <meta name="msapplication-square70x70logo" content="TODO">
+  <meta name="msapplication-square150x150logo" content="TODO">
+
+  <!-- Apple -->
+  <link rel="apple-touch-icon-precomposed" href="TODO">
+
+  <!-- Generic -->
+  <link rel="icon" href="TODO" sizes="32x32">
+  <link rel="icon" href="TODO" sizes="96x96">
+  <link rel="icon" href="TODO" sizes="128x128">
+  <link rel="icon" href="TODO" sizes="195x195">
+  <link rel="icon" href="TODO" sizes="228x228">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
+  <meta name="description" content="{{ page.content | markdownify | split:'</p>' | first | strip_html }}">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- <link rel="stylesheet" href="https://rawgit.com/dimsemenov/PhotoSwipe/master/dist/photoswipe.css"> -->
+  <!-- <link rel="stylesheet" href="https://rawgit.com/dimsemenov/PhotoSwipe/master/dist/default-skin/default-skin.css"> -->
+</head>
+
+<body>
+  <h1>{% include header.html %}</h1>
+
+  <nav>
+    {% for item in site.data.navigation %}
+      <a href="{{ item[1] }}">{{ item[0] }}</a>
+    {% endfor %}
+  </nav>
+
+  <main role="main">
+    {{ content }}
+  </main>
+
+  <footer>{% include footer.html %}</footer>
+
+  <script src="/js/touch.js"></script>
+</body>
+</html>

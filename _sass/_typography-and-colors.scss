@@ -1,0 +1,55 @@
+@import "color-definitions";
+
+html {
+  background: stripes(135deg, 75px, $primary-color, $tertiary-color) fixed;
+}
+
+body {
+  background: white;
+  -webkit-box-shadow: 0 0 4em black;
+  -moz-box-shadow: 0 0 4em black;
+  box-shadow: 0 0 4em black;
+
+  // Use whatever sans-serif font is available for efficiency.
+  font-family: sans-serif;
+  z-index: 1000;
+}
+
+// Footer is a solid bar with logo-style text.
+footer {
+  font-family: "Syncopate", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: $secondary-color;
+  text-shadow: 0 1px rgba(white, 0.5);
+  @include bar-gradient(background);
+}
+
+h1 {
+  @extend footer;
+  text-shadow: 0.1em 0.1em $primary-color;
+
+  // inner spans are used to give special per-character styling to text to
+  // display a logo.
+  > span {
+    display: block;
+    margin-bottom: .5em;
+    letter-spacing: -2px;
+    font-size: 1.5em;
+    margin: 0;
+
+    > span {
+      font-size: 1.25em;
+      position: relative;
+      top: .0625em;
+      display: inline-block;
+    }
+  }
+}
+
+h2 {
+  color: $secondary-color;
+  padding-bottom: 2px;
+  border-bottom: 1px solid mix($secondary-color, white, 25);
+  display: block;
+}
