@@ -46,10 +46,9 @@ nav {
 // (Only when navigation is displayed as a sidebar, i.e. in large viewports).
 body::before { @extend nav; }
 
-@media (min-width: 10em) {
+@mixin nav-grid($grid-columns) {
   // Arrange navigation into a 100%-width grid.
   $space-between: 1%;
-  $grid-columns: 2;
 
   nav {
     -webkit-flex-flow: row wrap;
@@ -63,13 +62,16 @@ body::before { @extend nav; }
   }
 }
 
-@media (min-width: 35em) {
-  $navigation-width: 9.5rem;
+@media (min-width: 10em) {
+  @include nav-grid(2);
+}
 
-  // Appear on top of body:before
-  h1, nav {
-    position: relative;
-  }
+@media (min-width: 45em) {
+  @include nav-grid(4);
+}
+
+@media (min-width: 35em) and (max-width: 45em), (min-width: 65em) {
+  $navigation-width: 9.5rem;
 
   nav {
     float: left;
@@ -82,6 +84,7 @@ body::before { @extend nav; }
     }
 
     // Keep nav on screen if it's scrolled past — dock to top of window.
+    position: relative; // fallback: appear on top of body:before
     position: -webkit-sticky;
     position: sticky;
     top: 0;

@@ -27,6 +27,7 @@ footer {
 
 h1 {
   @extend footer;
+  position: relative;
   text-shadow: 0.1em 0.1em $primary-color;
 
   // inner spans are used to give special per-character styling to text to

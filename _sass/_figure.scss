@@ -31,7 +31,7 @@ figure {
 
 // When the user-agent is large enough, display the figure as a secondary
 // column, to the right of the main content.
-@media (min-width: 65em) {
+@media (min-width: 45em + (1em / 16)) {
   figure {
     min-width: 40%;
     max-width: 50%;

@@ -37,11 +37,6 @@ body:after {
   clear: both;
 }
 
-h1, footer {
-  margin: 0;
-  padding: 1em;
-}
-
 main {
   padding: 0 2em 48px;
   font-size: 1.2em;
@@ -55,6 +50,8 @@ main:after {
 }
 
 footer {
+  margin: 0;
+  padding: 1em;
   position: absolute;
   left: 0;
   right: 0;
