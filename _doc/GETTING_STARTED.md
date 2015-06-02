@@ -7,6 +7,7 @@ for it to build successfully:
 
 * [Git](http://git-scm.com)
 * [Ruby](https://www.ruby-lang.org/en/) >= 1.9.3
+* [Node.js](https://nodejs.org) >= 0.6.3
 * [Bundler](http://bundler.io)
 
 ## Clone the repository
@@ -20,6 +21,7 @@ cd wmb-heavyhaulage.co.uk
 
 ```bash
 bundle
+npm install
 ```
 
 ## Build the site
