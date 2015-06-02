@@ -2,7 +2,7 @@
 layout: page
 ---
 
-<h2><a href="/photos">Gallery</a> »{{ page.title | split:":" | last }}</h2>
+<h2><a href="/photos">Gallery</a> »{{ page.title | split:":" | last | split:"-" | join:" " }}</h2>
 
 <ul class="gallery">
 {% for image in page.images %}
