@@ -27,6 +27,7 @@ figure {
   > iframe {
     min-height: 180px; // min-height overrides max-height.
     max-height: 50vh;
+    background: #eee; // indicate something is here before it loads.
   }
 }
 
