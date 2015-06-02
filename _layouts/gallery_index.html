@@ -8,9 +8,12 @@ layout: page
 {% for gallery in page.galleries %}
   <li>
     <a href="{{ gallery['gallery'] }}">
-      <img src="{{ gallery['gallery'] }}/thumbs/{{ gallery['best_image'] }}">
+      <img
+        alt=""
+        src="{{ gallery['gallery'] }}/thumbs/{{ gallery['best_image'] }}">
       <h3 class="title">{{ gallery["name"] | split:"-" | join:" " }}</h3>
-      {{ gallery["images"] | size }} image{% if gallery["images"].size != 1 %}s{% endif %}
+      {{ gallery["images"] | size }}
+      image{% if gallery["images"].size != 1 %}s{% endif %}
     </a>
   </li>
 {% endfor %}
