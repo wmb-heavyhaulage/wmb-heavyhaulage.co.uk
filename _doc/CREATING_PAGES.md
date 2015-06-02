@@ -99,6 +99,7 @@ content for consistency reasons. These are:
 
 * Use two spaces for indentation
 * Use UTF-8 character encoding
+* Use UNIX-style newline characters
 * End every file with a trailing newline
 * Keep lines below 80 characters in length wherever possible
 
