@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <!-- OpenGraph -->
+  {% comment %}OpenGraph{% endcomment %}
   <meta property="og:image" content="TODO">
   <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:site_name" content="{{ site.name }}">
   <meta property="og:type" content="blog">
 
-  <!-- Twitter -->
+  {% comment %}Twitter{% endcomment %}
   <meta name="twitter:card" content="summary">
   <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}">
@@ -22,16 +22,16 @@
   <meta name="twitter:creator" content="TODO">
   <meta name="twitter:domain" content="{{ site.url }}">
 
-  <!-- Windows -->
+  {% comment %}Windows{% endcomment %}
   <meta name="msapplication-TileColor" content="#FFFFFF">
   <meta name="msapplication-TileImage" content="TODO">
   <meta name="msapplication-square70x70logo" content="TODO">
   <meta name="msapplication-square150x150logo" content="TODO">
 
-  <!-- Apple -->
+  {% comment %}Apple{% endcomment %}
   <link rel="apple-touch-icon-precomposed" href="TODO">
 
-  <!-- Generic -->
+  {% comment %}Generic{% endcomment %}
   <link rel="icon" href="TODO" sizes="32x32">
   <link rel="icon" href="TODO" sizes="96x96">
   <link rel="icon" href="TODO" sizes="128x128">

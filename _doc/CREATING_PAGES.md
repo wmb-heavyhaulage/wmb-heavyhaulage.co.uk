@@ -102,6 +102,9 @@ content for consistency reasons. These are:
 * Use UNIX-style newline characters
 * End every file with a trailing newline
 * Keep lines below 80 characters in length wherever possible
+* Prefer Liquid comments to HTML comments — for example, prefer
+`{{ comment }}This is a comment.{{ endcomment }}` to
+`<!-- This is a comment. -->`
 
 If your text editor supports the [EditorConfig](http://editorconfig.org)
 standard, it can enforce most of these recommendations automatically. You may
