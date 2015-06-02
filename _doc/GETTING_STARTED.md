@@ -9,6 +9,7 @@ for it to build successfully:
 * [Ruby](https://www.ruby-lang.org/en/) >= 1.9.3
 * [Node.js](https://nodejs.org) >= 0.6.3
 * [Bundler](http://bundler.io)
+* [ImageMagick](http://www.imagemagick.org)
 
 ## Clone the repository
 
