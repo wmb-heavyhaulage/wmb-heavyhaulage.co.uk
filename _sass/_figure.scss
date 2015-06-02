@@ -33,7 +33,6 @@ figure {
 // column, to the right of the main content.
 @media (min-width: 65em) {
   figure {
-    box-sizing: content-box;
     min-width: 40%;
     max-width: 50%;
     float: right;
@@ -41,6 +40,10 @@ figure {
     // Display a border to seperate it from the main content,
     // which may a have a header underline that would otherwise hit right up
     // against the figure.
-    border-left: 2em solid white;
+    padding-left: 2em;
+
+    // White background covers header underline if figure contains content
+    // that is still loading e.g. Google Map.
+    background: white;
   }
 }
