@@ -21,10 +21,6 @@ figure {
 
   > iframe {
     min-height: 180px; // min-height overrides max-height.
-
-    // declare a fallback max-height for browers that don't support vh units.
-    // TODO: does this work in those browers?
-    max-height: 50%;
     max-height: 50vh;
   }
 }
