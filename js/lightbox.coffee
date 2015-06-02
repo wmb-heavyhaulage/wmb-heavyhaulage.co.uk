@@ -1,6 +1,12 @@
 ---
 ---
 
+#
+# lightbox.coffee
+#
+# Copyright © 2015 Ross Penman. All rights reserved.
+#
+
 # displays a lightbox
 # @param index; the index of the photo to display
 lightbox = (options = {}) ->

@@ -1,6 +1,14 @@
 ---
 ---
 
+{% comment %}
+
+page.html
+
+Copyright © 2015 Ross Penman. All rights reserved.
+
+{% endcomment %}
+
 <h2><a href="/photos">Gallery</a> »{{ page.title | split:":" | last | split:"-" | join:" " }}</h2>
 
 <ul class="gallery">

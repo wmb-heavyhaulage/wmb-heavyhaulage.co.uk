@@ -1,3 +1,9 @@
+//
+// _mixins.scss
+//
+// Copyright © 2015 Ross Penman. All rights reserved.
+//
+
 @function stripes($angle, $width, $colors...) {
   $value: $angle;
   $i: 0;
