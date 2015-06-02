@@ -1,7 +1,7 @@
 GIT
   remote: git://github.com/penman/jekyll-gallery-generator.git
-  revision: 57a017a887fc1f460c5dc56b50aed55f69ca87e3
-  branch: patch-1
+  revision: 4ef0cbdb4a8c67297cb21125dc986e7820a1108f
+  branch: dimensions
   specs:
     jekyll-gallery-generator (0.0.4)
       exifr (~> 1.2)
@@ -21,7 +21,7 @@ GEM
     coffee-script-source (1.9.1)
     colorator (0.1)
     execjs (2.4.0)
-    exifr (1.2.1)
+    exifr (1.2.2)
     fast-stemmer (1.0.2)
     ffi (1.9.8)
     hitimes (1.2.2)
@@ -65,7 +65,7 @@ GEM
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     redcarpet (3.2.2)
-    rmagick (2.14.0)
+    rmagick (2.15.1)
     safe_yaml (1.0.4)
     sass (3.4.13)
     timers (4.0.1)

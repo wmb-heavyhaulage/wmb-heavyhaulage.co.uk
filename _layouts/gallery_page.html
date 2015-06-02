@@ -7,8 +7,13 @@ layout: page
 <ul class="gallery">
 {% for image in page.images %}
   <li>
+    {% assign index = forloop.index | minus:1 %}
+    {% assign dimensions = page.image_dimensions[index] %}
     <a href="{{ image }}">
-      <img src="thumbs/{{ image }}">
+      <img
+        src="thumbs/{{ image }}"
+        data-full-width="{{ dimensions.width }}"
+        data-full-height="{{ dimensions.height }}">
     </a>
   </li>
 {% endfor %}
