@@ -25,4 +25,4 @@ DG1 4JX</address>
 * **Call** 07793 126606 or 07734 487772
 * **Email** [info@wmb-heavyhaulage.co.uk](mailto:info@wmb-heavyhaulage.co.uk)
 
-[Contact card](/TODO)
+<a href="/assets/WMB%20Heavy%20Haulage.vcf" download>Contact Card</a>
