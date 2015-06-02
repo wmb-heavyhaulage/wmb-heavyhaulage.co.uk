@@ -14,6 +14,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - package.json
+  - npm-shrinkwrap.json
 
   # the PhotoSwipe node module also contains a lot of unnecessary stuff.
   - node_modules/photoswipe/src

@@ -1,0 +1,10 @@
+{
+  "name": "wmb-heavyhaulage.co.uk",
+  "dependencies": {
+    "photoswipe": {
+      "version": "4.0.8",
+      "from": "photoswipe@>=4.0.8 <5.0.0",
+      "resolved": "https://registry.npmjs.org/photoswipe/-/photoswipe-4.0.8.tgz"
+    }
+  }
+}
