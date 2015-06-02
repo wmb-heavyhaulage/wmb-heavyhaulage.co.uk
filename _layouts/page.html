@@ -18,8 +18,10 @@
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}">
   <meta name="twitter:description" content="{{ page.content | markdownify | strip_html | truncate: 200 }}">
   <meta name="twitter:image" content="/assets/images/icon/120.jpeg">
-  <meta name="twitter:site" content="TODO">
-  <meta name="twitter:creator" content="TODO">
+  {% comment %}
+    `twitter:site` and `twitter:creator` are not present as there is no Twitter
+    account associated with this website.
+  {% endcomment %}
   <meta name="twitter:domain" content="{{ site.url }}">
 
   {% comment %}Windows{% endcomment %}
