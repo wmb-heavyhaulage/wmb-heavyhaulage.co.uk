@@ -24,7 +24,9 @@ GEM
     exifr (1.2.2)
     fast-stemmer (1.0.2)
     ffi (1.9.8)
+    ffi (1.9.8-x86-mingw32)
     hitimes (1.2.2)
+    hitimes (1.2.2-x86-mingw32)
     jekyll (2.5.3)
       classifier-reborn (~> 2.0)
       colorator (~> 0.1)
@@ -76,7 +78,11 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   jekyll
   jekyll-gallery-generator!
+
+BUNDLED WITH
+   1.10.2
