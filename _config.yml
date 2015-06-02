@@ -13,3 +13,14 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - package.json
+
+  # the PhotoSwipe node module also contains a lot of unnecessary stuff.
+  - node_modules/photoswipe/src
+  - node_modules/photoswipe/website
+  - node_modules/photoswipe/Gruntfile.js
+  - node_modules/photoswipe/LICENSE
+  - node_modules/photoswipe/*.json
+  - node_modules/photoswipe/README.md
+  - node_modules/photoswipe/dist/photoswipe.js
+  - node_modules/photoswipe/dist/photoswipe-ui-default.js

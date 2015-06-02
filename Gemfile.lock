@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/penman/jekyll-gallery-generator.git
-  revision: 4ef0cbdb4a8c67297cb21125dc986e7820a1108f
+  revision: 39289624ef14bd6a190336085fdc9d977beff65c
   branch: dimensions
   specs:
     jekyll-gallery-generator (0.0.4)

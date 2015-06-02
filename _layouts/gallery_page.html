@@ -1,5 +1,4 @@
 ---
-layout: page
 ---
 
 <h2><a href="/photos">Gallery</a> »{{ page.title | split:":" | last | split:"-" | join:" " }}</h2>
@@ -20,4 +19,9 @@ layout: page
 {% endfor %}
 </ul>
 
-{% include photoswipe.html %}
+{% comment %}PhotoSwipe markup will be injected here.{% endcomment %}
+<div id="pswp-container"></div>
+
+<script src="/node_modules/photoswipe/dist/photoswipe.min.js"></script>
+<script src="/node_modules/photoswipe/dist/photoswipe-ui-default.min.js"></script>
+<script src="/js/lightbox.js"></script>

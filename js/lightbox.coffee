@@ -13,6 +13,18 @@ lightbox = (options = {}) ->
   gallery = new PhotoSwipe pswp, PhotoSwipeUI_Default, items, options
   gallery.init()
 
+
+###
+{% comment %}
+  Use Liquid to read the photoswipe HTML, because it's huge and would clutter up
+  this source file.
+{% endcomment %}
+{% capture pswp %}{% include photoswipe.html %}{% endcapture %}
+###
+pswpMarkup = {{ pswp | jsonify }};
+
+document.getElementById("pswp-container").innerHTML = pswpMarkup
+
 # listen for clicks to display the lightbox
 document.addEventListener "click", (e) ->
 
@@ -46,8 +58,6 @@ document.addEventListener "click", (e) ->
       # get the bounding rect for the element
       # has not yet been adjusted for scroll position
       rect = container.getBoundingClientRect(container)
-
-      console.log rect, pageYOffset
 
       # adjust rect for scroll position
       x: rect.left, y: rect.top + pageYOffset, w: rect.width

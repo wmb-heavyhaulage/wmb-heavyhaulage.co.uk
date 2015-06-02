@@ -43,8 +43,14 @@
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
 
   <link rel="stylesheet" href="/css/style.css">
-  <!-- <link rel="stylesheet" href="https://rawgit.com/dimsemenov/PhotoSwipe/master/dist/photoswipe.css"> -->
-  <!-- <link rel="stylesheet" href="https://rawgit.com/dimsemenov/PhotoSwipe/master/dist/default-skin/default-skin.css"> -->
+
+  {% comment %}include PhotoSwipe CSS when on a gallery page.{% endcomment %}
+  {% if page.url contains "photos" and page.url != "/photos/index.html" %}
+    <link rel="stylesheet" href="/node_modules/photoswipe/dist/photoswipe.css">
+    <link
+      rel="stylesheet"
+      href="/node_modules/photoswipe/dist/default-skin/default-skin.css">
+  {% endif %}
 </head>
 
 <body>
@@ -62,6 +68,14 @@
 
   <footer>{% include footer.html %}</footer>
 
-  <script src="/js/touch.js"></script>
+  {% comment %}
+    Make mobile Safari show :active styles.
+    Since this script was so short it didn't really make sense to have in a
+    seperate file.
+
+    XXX: If more JavaScript is needed to be run on all pages, it may make sense
+    to move it to a seperate file in future.
+  {% endcomment %}
+  <script>document.addEventListener("touchstart", function() {});</script>
 </body>
 </html>

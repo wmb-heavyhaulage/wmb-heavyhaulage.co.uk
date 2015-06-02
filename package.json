@@ -1,0 +1,7 @@
+{
+  "name": "wmb-heavyhaulage.co.uk",
+  "repository": "https://github.com/wmb-heavyhaulage/wmb-heavyhaulage.co.uk.git",
+  "dependencies": {
+    "photoswipe": "^4.0.8"
+  }
+}
