@@ -8,8 +8,8 @@ lightbox = (options = {}) ->
   items = for anchor in document.querySelectorAll ".gallery > li > a"
     img = anchor.children[0]
     src: anchor.href
-    # w: img.width * 10, h: img.height * 10
-    w: 350, h: 315
+    w: img.getAttribute("data-full-width")
+    h: img.getAttribute("data-full-height")
   gallery = new PhotoSwipe pswp, PhotoSwipeUI_Default, items, options
   gallery.init()
 
@@ -32,14 +32,6 @@ document.addEventListener "click", (e) ->
   # display the lightbox
   lightbox
     index: index
-
-    getDoubleTapZoom: (isMouseClick, item) ->
-      console.log item
-      # 1/ item.fitRatio
-      # if isMouseClick
-      #   1
-      # else
-      #   `item.initialZoomLevel < 0.5 ? 1 : 1.5`
 
     getThumbBoundsFn: (index) ->
 
