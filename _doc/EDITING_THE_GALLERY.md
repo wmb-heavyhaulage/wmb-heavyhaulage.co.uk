@@ -39,7 +39,7 @@ gallery category named "Diggers And Things".
 The cover image for a gallery category is the image used the represent the
 category on the gallery index page. By default, it is the last image in the
 category directory, but this may be overridden by adding an entry in
-[_/config.yml](https://github.com/wmb-heavyhaulage/wmb-heavyhaulage.co.uk/blob/master/_config.yml).
+[/_config.yml](https://github.com/wmb-heavyhaulage/wmb-heavyhaulage.co.uk/blob/master/_config.yml).
 
 For example:
 
@@ -48,6 +48,6 @@ gallery:
   galleries:
     diggers-and-things:
       best_image: bulldozer.jpg
-    cochran-boilres:
+    cochran-boilers:
       best_image: boiler6.jpg
 ```
