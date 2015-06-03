@@ -10,3 +10,4 @@ directory.
 ## Dependencies
 
 * [jekyll-gallery-generator (@penman fork)](https://github.com/penman/jekyll-gallery-generator)
+* [PhotoSwipe](http://photoswipe.com)
