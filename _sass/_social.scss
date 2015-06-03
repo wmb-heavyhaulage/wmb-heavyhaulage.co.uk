@@ -1,0 +1,15 @@
+.social {
+  float: right;
+
+  // Replace text with facebook logo
+  a {
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    display: block;
+
+    &:before {
+      content: url(/assets/images/facebook.svg);
+    }
+  }
+}
