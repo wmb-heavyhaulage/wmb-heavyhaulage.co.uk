@@ -76,3 +76,8 @@ h2 {
     }
   }
 }
+
+// Large default paddings can drastically reduce line length on smaller screens.
+ul {
+  padding-left: 30px;
+}

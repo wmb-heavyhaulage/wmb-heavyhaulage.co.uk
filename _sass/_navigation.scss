@@ -6,10 +6,13 @@
 
 @import "color-definitions";
 
+nav, body::before {
+  background: $secondary-color;
+}
+
 nav {
   color: $tertiary-color;
   text-align: center;
-  background: $secondary-color;
   font-family: sans-serif;
   text-transform: uppercase;
 
@@ -50,20 +53,30 @@ nav {
 // behind it. This gives the allsuion that the navigation is stretched to the
 // full container height, while still allowing nav to be a floating element.
 // (Only when navigation is displayed as a sidebar, i.e. in large viewports).
-body::before { @extend nav; }
 
 @mixin nav-grid($grid-columns) {
   // Arrange navigation into a 100%-width grid.
   $space-between: 1%;
 
   nav {
-    -webkit-flex-flow: row wrap;
-    display: -webkit-flex;
     padding: 0.25em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
 
     a {
-      -webkit-flex: 0 0 100% / $grid-columns - $space-between * 2;
-      margin: $space-between;
+      -webkit-box-flex: 0;
+          -webkit-flex: 0 0 100% / $grid-columns - $space-between * 2;
+              -ms-flex: 0 0 100% / $grid-columns - $space-between * 2;
+                  flex: 0 0 100% / $grid-columns - $space-between * 2;
+
+      // approximate vertical margin using vw units because vertical percentage
+      // flex margins don't work the same as on normal elements.
+      margin: $space-between / 1% * 1vw $space-between;
     }
   }
 }
@@ -79,11 +92,14 @@ body::before { @extend nav; }
 @media (min-width: 35em) and (max-width: 45em), (min-width: 65em) {
   $navigation-width: 9.5rem;
 
+  nav, body::before {
+    width: $navigation-width;
+  }
+
   nav {
     float: left;
     display: block; // reset flexbox styles.
     padding: 0;
-    width: $navigation-width;
 
     a {
       margin: .5em;
@@ -110,9 +126,9 @@ body::before { @extend nav; }
   body::before {
     content: "";
     position: absolute;
+    top: 0;
     left: 0;
     bottom: 0;
     max-height: none; // override inherited max-height from `nav`.
-    box-sizing: border-box;
   }
 }

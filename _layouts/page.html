@@ -65,15 +65,17 @@ Copyright © 2015 Ross Penman. All rights reserved.
 <body>
   <h1>{% include header.html %}</h1>
 
-  <nav>
-    {% for item in site.data.navigation %}
-      <a href="{{ item[1] }}">{{ item[0] }}</a>
-    {% endfor %}
-  </nav>
+  <div class="container">
+    <nav>
+      {% for item in site.data.navigation %}
+        <a href="{{ item[1] }}">{{ item[0] }}</a>
+      {% endfor %}
+    </nav>
 
-  <main role="main">
-    {{ content }}
-  </main>
+    <main role="main">
+      {{ content }}
+    </main>
+  </div>
 
   <footer>
     {% include footer.html %}
