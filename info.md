@@ -17,7 +17,7 @@ The acquisition of a 54T/m, 11m reach crane truck has enhanced the service provi
 the lift capacity to 90T/m with a 30m reach.  This vehicle will be complete with a drawbar trailer to further extend the transportation 
 options.
 
-Currently goods in transit insurance covers up to &#xA3;500,000.00, all risks, in any one load.  This value may be increased as required.
+Currently goods in transit insurance covers up to £500,000.00, all risks, in any one load.  This value may be increased as required.
 If load requirements exceed 80T, we have well established links with other hauliers throughout the UK.
  
 Risk assessment and method statements are prepared for lifts/transport as appropriate.
