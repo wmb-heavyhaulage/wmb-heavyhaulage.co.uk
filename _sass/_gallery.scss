@@ -12,16 +12,8 @@
   text-align: center;
   font-size: 0;
 
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  flex-flow: row wrap;
+  justify-content: center;
   display: flex;
 
   li {
@@ -29,9 +21,6 @@
     margin: 0 0.5em 1em;
     display: inline-block;
 
-    -webkit-box-flex: 1;
-    -webkit-flex: auto;
-    -ms-flex: auto;
     flex: auto;
     width: 200px;
     max-width: 400px;

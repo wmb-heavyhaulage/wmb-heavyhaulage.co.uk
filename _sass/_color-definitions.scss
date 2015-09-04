@@ -25,10 +25,5 @@ $tertiary-color: #cccccd;
   $from: #d6d6d6;
   $to: #aeaeae;
   #{$property}: mix($from, $to); // fallback
-  #{$property}: -webkit-gradient(linear, 0 0, 0 100%, from($from), to($to));
-  #{$property}: -webkit-linear-gradient($from, $to);
-  #{$property}:    -moz-linear-gradient($from, $to);
-  #{$property}:     -ms-linear-gradient($from, $to);
-  #{$property}:      -o-linear-gradient($from, $to);
-  #{$property}:         linear-gradient($from, $to);
+  #{$property}: linear-gradient($from, $to);
 }

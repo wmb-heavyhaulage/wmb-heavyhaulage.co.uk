@@ -28,9 +28,6 @@ nav {
     // Break onto the next line instead of overflowing,
     // and insert hyphens if supported.
     word-wrap: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
     hyphens: auto;
 
     // disable Mobile Safari link highlight
@@ -60,19 +57,11 @@ nav {
 
   nav {
     padding: 0.25em;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-flow: row wrap;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
+    flex-flow: row wrap;
 
     a {
-      -webkit-box-flex: 0;
-          -webkit-flex: 0 0 100% / $grid-columns - $space-between * 2;
-              -ms-flex: 0 0 100% / $grid-columns - $space-between * 2;
-                  flex: 0 0 100% / $grid-columns - $space-between * 2;
+      flex: 0 0 100% / $grid-columns - $space-between * 2;
 
       // approximate vertical margin using vw units because vertical percentage
       // flex margins don't work the same as on normal elements.
@@ -107,7 +96,6 @@ nav {
 
     // Keep nav on screen if it's scrolled past — dock to top of window.
     position: relative; // fallback: appear on top of body:before
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
 
