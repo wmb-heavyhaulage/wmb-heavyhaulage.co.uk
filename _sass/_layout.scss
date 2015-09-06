@@ -47,7 +47,13 @@ body:after {
   clear: both;
 }
 
+.container {
+  flex: 1;
+  flex-basis: auto; // work around IE 10 bug
+}
+
 main {
+  display: block;
   padding: 0 1em 0;
   font-size: 1.2em;
 
@@ -68,8 +74,4 @@ footer {
   margin: 0;
   padding: 1em;
   z-index: 1;
-}
-
-.container {
-  flex: 1;
 }
