@@ -1,5 +1,8 @@
 ---
 ---
+Information
+-----------
+
 WMB Heavy Haulage is a family run business, with over 30 years experience in the abnormal haulage sector.
  
 We currently operate a fleet of 5 Scania tractor units and variety of trailer options capable of transporting abnormal and heavy loads 
