@@ -22,7 +22,7 @@ Dumfries<br>
 DG1 4JX</address>
 
 * **Call or fax** 01387 840297
-* **Call** 07793 126606 or 07734 487772
+* **Call** 07793 126606(Jon) or 07734 487772(Murray)
 * **Email** [info@wmb-heavyhaulage.co.uk](mailto:info@wmb-heavyhaulage.co.uk)
 
 Follow us on <a href="https://www.facebook.com/pages/WMB-Heavy-Haulage/968556759835171">Facebook</a>
