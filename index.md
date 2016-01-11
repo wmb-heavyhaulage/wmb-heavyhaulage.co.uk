@@ -10,10 +10,12 @@
     height="384">
 </figure>
 
+*** Latest News ***
+-------------------
+Read about us in the latest issue of [Heavy Torque](http://en.calameo.com/read/0041575422c4d24716c7d?authid=6q99LX5qDqTx).
 
 Our services
 ------------
-
 * Abnormal/indivisible load transportation
 * Escort service
 * Statutory notifications for local authorities and police forces 
@@ -23,8 +25,8 @@ Our services
 
 Contact us
 ----------
-
 Call 07793 126606 or  
 email [info@wmb-heavyhaulage.co.uk](mailto:info@wmb-heavyhaulage.co.uk).
+
 
 [How to find us](/contact-us.html)

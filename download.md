@@ -10,3 +10,8 @@ Downloads
 
 <a href="/assets/Load%20securing%20guidance.pdf" download>DVSA Load Securing Guidance</a>
 
+<a href="/assets/CM02072012.pdf" download>Commercial Motor July 2012</a>
+
+<a href="/assets/CM25072011.pdf" download>Commercial Motor July 2011</a>
+
+
