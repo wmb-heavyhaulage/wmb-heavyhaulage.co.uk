@@ -1,6 +1,9 @@
+require "net/http"
+require "json"
+versions = JSON.parse Net::HTTP.get URI "https://pages.github.com/versions.json"
+
 source "https://rubygems.org"
 
-gem "jekyll"
-gem "jekyll-gallery-generator", github: "penman/jekyll-gallery-generator", branch: "dimensions"
+gem "github-pages", versions["github-pages"]
+gem "jekyll-gallery-generator", github: "penman/jekyll-gallery-generator"
 gem "octopress-autoprefixer"
-
