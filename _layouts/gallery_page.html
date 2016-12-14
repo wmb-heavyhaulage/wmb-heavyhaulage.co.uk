@@ -16,13 +16,12 @@ Copyright © 2015 Ross Penman. All rights reserved.
 {% for image in page.images %}
   <li>
     {% assign index = forloop.index | minus:1 %}
-    {% assign dimensions = page.image_dimensions[index] %}
     <a href="{{ image.name }}">
       <img
         alt=""
         src="thumbs/{{ image.name }}"
-        data-full-width="{{ dimensions.width }}"
-        data-full-height="{{ dimensions.height }}">
+        data-full-width="{{ image.exif.width }}"
+        data-full-height="{{ image.exif.height }}">
     </a>
   </li>
 {% endfor %}
