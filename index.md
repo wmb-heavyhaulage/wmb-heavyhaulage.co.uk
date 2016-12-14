@@ -3,8 +3,8 @@
 
 <figure>
   <img
-    alt="A lorry pulls a digger along a road."
-    src="/assets/images/index.jpeg"
+    alt="Xmas 2016."
+    src="/assets/images/xmas2016.png"
     srcset="/assets/images/index@2x.jpeg w1024"
     width="512"
     height="384">
@@ -12,7 +12,8 @@
 
 *** Latest News ***
 -------------------
-Read about us in the latest issue of [Heavy Torque](http://en.calameo.com/read/0041575422c4d24716c7d?authid=6q99LX5qDqTx).
+Merry Christmas from all at WMB Heavy Haulage
+
 
 Our services
 ------------

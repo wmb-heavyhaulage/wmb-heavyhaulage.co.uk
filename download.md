@@ -14,4 +14,6 @@ Downloads
 
 <a href="/assets/CM25072011.pdf" download>Commercial Motor July 2011</a>
 
+<a href="http://en.calameo.com/read/0041575422c4d24716c7d?authid=6q99LX5qDqTx" download>Heavy Torque 2016</a>
+
 
