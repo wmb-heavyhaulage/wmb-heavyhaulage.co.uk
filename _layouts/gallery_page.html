@@ -15,7 +15,6 @@ Copyright © 2015 Ross Penman. All rights reserved.
 <ul class="gallery">
 {% for image in page.images %}
   <li>
-    {% assign index = forloop.index | minus:1 %}
     <a href="{{ image.name }}">
       <img
         alt=""
