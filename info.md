@@ -1,5 +1,15 @@
 ---
 ---
+<figure>
+  <img
+    alt="Fleet phote."
+    src="/assets/images/info.jpeg"
+    srcset="/assets/images/info@2x.jpeg w1024"
+    width="512"
+    height="505">
+</figure>
+
+
 Information
 -----------
 

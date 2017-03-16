@@ -3,7 +3,7 @@
 
 <figure>
   <img
-    alt="A lorry pulls a digger along a road."
+    alt="Timber harvester."
     src="/assets/images/index.jpeg"
     srcset="/assets/images/index@2x.jpeg w1024"
     width="512"
