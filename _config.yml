@@ -1,4 +1,4 @@
-gems:
+plugins:
   - jekyll-coffeescript
   - jekyll-gallery-generator
   - octopress-autoprefixer
