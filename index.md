@@ -21,7 +21,7 @@ Our services
 
 Contact us
 ----------
-Call 07793 126606 or  
+Call 07734 487772 or  
 email [info@wmb-heavyhaulage.co.uk](mailto:info@wmb-heavyhaulage.co.uk).
 
 
